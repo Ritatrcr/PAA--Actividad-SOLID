@@ -1,7 +1,7 @@
 # Ejercicio 1 — Builder (Automóvil) **(sin Director)**
 
 **Patrón:** Builder (Creacional)  
-**Por qué:** Evita el “constructor telescópico”; permite construir objetos complejos de forma **fluida** y dejar el objeto final **inmutable**. No usamos `Director` porque las “recetas” predefinidas no son requisito: construimos directamente con el `AutomovilBuilder`.
+**Por qué:** Elegimos Builder porque el modelo Automovil tiene múltiples opciones configurables. El patrón evita el constructor telescópico (múltiples sobrecargas con parámetros posicionales), mejora la legibilidad al usar métodos con nombre y asegura un objeto final inmutable. Centralizamos defaults y validaciones en build(), lo que facilita la evolución del modelo sin romper firmas ni duplicar lógica. En comparación, el enfoque telescópico incrementa la probabilidad de errores por orden de argumentos y dificulta el mantenimiento.
 
 ## Cómo ejecutar
 
@@ -14,3 +14,4 @@ EN ejercicio1 ejecutar:
 mvn -q -DskipTests exec:java o
 ```bash
 mvn -q -DskipTests exec:java -Dexec.mainClass=com.patrones.autos.ej1.Main
+ 
