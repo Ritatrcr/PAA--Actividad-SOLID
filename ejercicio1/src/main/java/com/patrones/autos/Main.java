@@ -1,4 +1,4 @@
-package com.patrones.autos.ej1;
+package com.patrones.autos;
 
 public class Main {
     public static void main(String[] args) {

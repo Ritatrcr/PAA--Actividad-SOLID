@@ -1,4 +1,4 @@
-package com.patrones.autos.ej1;
+package com.patrones.autos;
 
 public final class Automovil {
     private final TipoMotor motor;
