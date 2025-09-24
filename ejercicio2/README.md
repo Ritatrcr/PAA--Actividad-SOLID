@@ -10,6 +10,25 @@ By: Rita Trindade y Brandon Merchan
 ---
 
 
+## 1. Identificar el tipo de patrón (Estructural, comportamiento, creacional)
+##### 🧠 Patrón aplicado: Bridge
+Separamos la **abstracción** (tipos de notificación) del **implementador** (plataforma/render).  
+Así evitamos acoplar cada tipo con cada plataforma.
+
+
+
+## 2. Seleccionar el patrón que considera que es.
+
+- **Categoría:** **Estructural**
+- **Razón principal:** Separa la **abstracción** (tipos de notificación) del **implementador** (plataformas) para que ambos **varíen de forma independiente**.
+- **Beneficio clave:** Evita la **explosión de subclases** y favorece **composición sobre herencia**.
+
+> En nuestro caso, **Bridge** conecta dos jerarquías (tipos × plataformas) sin acoplarlas.
+
+
+## 3. Diseñar el diagrama de clases de la solución.
+
+
 ```mermaid
 classDiagram
 direction LR
@@ -83,9 +102,6 @@ Permite variar tipos y plataformas de forma independiente."
 
 ---
 
-## 🧠 Patrón aplicado: Bridge
-Separamos la **abstracción** (tipos de notificación) del **implementador** (plataforma/render).  
-Así evitamos acoplar cada tipo con cada plataforma.
 
 
 ## 📁 Estructura del proyecto
