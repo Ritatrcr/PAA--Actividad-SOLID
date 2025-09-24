@@ -203,12 +203,6 @@ public class SuccessNotification extends Notification {
 ## 🧪 Pruebas (opcional)
 - Captura `stdout` y verifica prefijos como `WEB -> [ALERTA]` al llamar `enviar()`.
 
----
-
-## ✅ Buen diseño (Dieter Rams)
-- **Claro:** cada clase tiene una única responsabilidad.  
-- **Duradero:** ampliable sin romper.  
-- **Cuidado por el detalle:** nombres, paquetes y factoría consistentes.
 
 ---
 
